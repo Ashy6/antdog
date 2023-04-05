@@ -1,0 +1,70 @@
+@use "../variables.scss" as var;
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  &-header {
+    width: 75rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.trade {
+      background: var.$bg-color;
+    }
+    &.about-us {
+      color: var.$bg-color;
+      font-size: 3.5rem;
+      font-weight: 500;
+      span {
+        padding: 0 0.8rem;
+        &:not(.text) {
+          padding: 0 2rem;
+          font-size: 1.2rem;
+        }
+      }
+      border-bottom: var.$bd-style;
+    }
+  }
+  &-main {
+    width: 75rem;
+    height: calc(100vh - 24rem);
+    background-color: #f5f9f9;
+    overflow-y: auto;
+    &.trade {
+      background: var.$bg-color;
+    }
+  }
+  &-footer {
+    width: 75rem;
+    height: 12rem;
+    display: flex;
+    border-top: var.$bd-style;
+    position: absolute;
+    background-color: #fafdfe;
+    bottom: 0;
+    &-item {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 5rem;
+      }
+      p {
+        line-height: 3.5rem;
+        margin: 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.phone-container-app {
+  position: absolute;
+  right: 4rem;
+  bottom: 46%;
+  width: 8rem;
+}

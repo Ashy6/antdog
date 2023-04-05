@@ -1,0 +1,26 @@
+.home-container {
+  // Carousel Component
+  &-img {
+    height: 50rem;
+  }
+  // Info Component
+  &-info {
+    height: 7rem;
+    width: fit-content;
+    font-size: 1.6rem;
+    display: flex;
+    margin: 0 auto;
+    span {
+      display: flex;
+      align-items: center;
+      color: rgb(214, 167, 1);
+      padding: 1.4rem;
+    }
+    &-img {
+      width: 4rem;
+      margin-right: 0.8rem;
+      border-radius: 50%;
+      box-shadow: 1px 2px 6px 0px #0005;
+    }
+  }
+}

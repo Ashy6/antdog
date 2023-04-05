@@ -1,0 +1,38 @@
+@use "../variables.scss" as var;
+
+.about-us-container {
+  &-card {
+    height: 23rem;
+    border-bottom: var.$bd-style;
+    margin: 0 3.6rem 2rem 3.6rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    .card-left {
+      max-width: 40rem;
+      max-height: 17rem;
+      margin: 3rem 0;
+      margin-right: 0.8rem;
+    }
+    .card-image {
+      width: 27.5rem;
+      height: 17rem;
+      border-radius: 1.5rem;
+      margin: 3rem 0;
+    }
+    &-title {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    &-sub {
+      text-align: left;
+      font-size: 2.2rem;
+      line-height: 3rem;
+      max-width: 40rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+  }
+}
