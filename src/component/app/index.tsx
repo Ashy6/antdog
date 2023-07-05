@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import useApi from "../../api";
+// import useApi from "../../api";
 import { Nav, Resource } from "../../types";
 import Header, { navData } from "./dynamic";
 import HomeComponent from "../home";
 import TradeComponent from "../trade";
 import AboutUsComponent from "../about-us";
 import { ACTIVE_COLOR, BASE_COLOR } from "../../utils";
-import appIcon from "../../assets/app_icon.png";
+// import appIcon from "../../assets/app_icon.png";
 
 import "./style.scss";
 
@@ -33,7 +33,7 @@ export const Main = (props: {
  * App Component
  */
 const App = () => {
-  const [contact] = useApi(Resource.contact);
+  // const [contact] = useApi(Resource.contact);
   const [navigation, setNavigation] = useState(navData);
   const [key, setKey] = useState(navData.find((i) => i.active)!.key);
   const [title, setTitle] = useState("");
@@ -60,7 +60,7 @@ const App = () => {
         <Header value={key} title={title} />
       </header>
       <main className={`App-main ${key}`}>
-        <img
+        {/* <img
           className="phone-container-app"
           src={appIcon}
           alt=""
@@ -69,7 +69,7 @@ const App = () => {
               window.open((contact as any).whatsapp, "_self");
             }
           }}
-        />
+        /> */}
         <Main value={key} callback={titleCallback} />
       </main>
       <footer className="App-footer">
